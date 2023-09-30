@@ -5,7 +5,9 @@ import nodes from './nodes/index.js'
 import tasks from './tasks.js'
 import run from './run.js'
 import fs from 'fs'
-const kp = crypto.keyPair(crypto.data(b4a.from('seedy')));
+import 'dotenv/config'
+
+const kp = crypto.keyPair(crypto.data(b4a.from(process.env.seed)));
 const node = nodes(kp)
 
 function createFolderIfNotExists(folderPath) {
