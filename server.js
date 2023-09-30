@@ -4,7 +4,7 @@ import b4a from 'b4a'
 import nodes from './nodes/index.js'
 import tasks from './tasks.js'
 import run from './run.js'
-
+import fs from 'fs'
 const kp = crypto.keyPair(crypto.data(b4a.from('seedy')));
 const node = nodes(kp)
 

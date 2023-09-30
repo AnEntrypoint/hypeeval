@@ -4,13 +4,13 @@ const router = express.Router()
 
 const init = (node, kp) => {
     const saveTask = async (req, res) => {
-        fs.writeFileSync(`tasks/${req.params.name}.json`, JSON.stringify(req.body))
+        fs.writeFileSync(`saves/${req.params.name}.json`, JSON.stringify(req.body))
         res.write('{success:true}')
         res.status(200).end()
     }
     const loadTask = async (req, res) => {
         try {
-            res.write(fs.readFileSync(`tasks/${req.params.name}.json`))
+            res.write(fs.readFileSync(`saves/${req.params.name}.json`))
             res.status(200).end()
         } catch(e) {
             res.write({error:e})
