@@ -1,5 +1,6 @@
 import ipc from 'hyper-ipc-secure';
 import webhook from './webhook.js';
+import openai from './openai.js';
 import testy from './testy.js';
 import tasks from './tasks.js';
 const init = (kp)=>{
@@ -7,6 +8,8 @@ const init = (kp)=>{
     const serverKey = node.getSub(kp, 'server');
     const webhookKey = node.getSub(kp, 'webhook');
     node.lbserve(webhookKey, serverKey, 'webhook', webhook);
+    const openaiKey = node.getSub(kp, 'openai');
+    node.lbserve(openaiKey, serverKey, 'openai', openai);
     const testyKey = node.getSub(kp, 'testy');
     node.lbserve(testyKey, serverKey, 'testy', testy);
     const tasksKey = node.getSub(kp, 'tasks');
