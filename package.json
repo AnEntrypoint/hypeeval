@@ -1,6 +1,6 @@
 {
     "name": "hypeeval",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "exports": "./index.js",
     "dependencies": {
         "quickjs-emscripten": "^0.23.0"
