@@ -1,5 +1,5 @@
-import runCall from './lib/runCall.js'
-import eval from './lib/eval.js'
+const runCall = require( './lib/runCall.js')
+const eval = require( './lib/eval.js')
 
 export {
     runCall,
