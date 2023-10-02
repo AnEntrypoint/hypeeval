@@ -1,2 +1,2 @@
 # hypeeval
-re-used code for the hype* packages go here
+isomorphic quickjs runner
