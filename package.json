@@ -1,5 +1,5 @@
 {
-    "name": "hypelib",
+    "name": "hypeeval",
     "version": "0.0.1",
     "exports": "./index.js",
     "dependencies": {
