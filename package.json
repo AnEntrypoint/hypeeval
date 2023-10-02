@@ -3,10 +3,6 @@
     "version": "0.0.9",
     "type": "module",
     "scripts": {
-        "dev": "vite --host",
-        "build": "vite build",
-        "preview": "vite preview --host --port 5173",
-        "check": "svelte-check --tsconfig ./tsconfig.json"
     },
     "exports": "./index.js",
     "dependencies": {
