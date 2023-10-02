@@ -1,5 +1,5 @@
 {
-    "name": "hypenode",
+    "name": "hypelib",
     "version": "0.0.9",
     "type": "module",
     "scripts": {
@@ -17,7 +17,6 @@
         "hyper-ipc-secure": "^1.4.23",
         "hypercore-crypto": "^3.4.0",
         "keypear": "^1.2.0",
-        "openai": "^4.11.0",
         "quickjs-emscripten": "^0.23.0"
     }
 }
