@@ -1,9 +1,6 @@
 {
     "name": "hypelib",
     "version": "0.0.1",
-    "type": "module",
-    "scripts": {
-    },
     "exports": "./index.js",
     "dependencies": {
         "quickjs-emscripten": "^0.23.0"
